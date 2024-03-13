@@ -7,3 +7,8 @@
     user: admin
   loop:
     - { name: "ci-pipelines"}
+
+- name: Include Multi Branch task file
+  ansible.builtin.include_tasks: mbranch.yml
+  loop:
+    - { name: "cart"}
