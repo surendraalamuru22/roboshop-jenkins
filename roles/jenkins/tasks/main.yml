@@ -1,7 +1,7 @@
-- name: Create jobs
+- name: Create multi jobs
   community.general.jenkins_job:
-    config: "{{ lookup('file', 'templates/test.xml') }}"
-    name: test
+    config: "{{ lookup('file', 'templates/mbranch.xml') }}"
+    name: testm
     password: admin123
     url: http://172.31.92.24:8080
     user: admin
